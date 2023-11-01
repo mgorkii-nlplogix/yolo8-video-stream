@@ -1,3 +1,14 @@
 black
 flake8
 hurry.filesize==0.9
+ultralytics
+yt-dlp
+youtube-dl==2020.12.2
+opencv-python
+pafy
+# git+https://github.com/ytdl-org/youtube-dl.git@master#egg=youtube_dl
+cap_from_youtube
+fastapi
+azure-identity
+azure-storage-blob
+azure-identity
