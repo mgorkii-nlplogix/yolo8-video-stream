@@ -6,13 +6,13 @@
 
 
 # Set the name of the Docker image
-IMAGE_NAME=${1:-"yolo8_prediction"}
+IMAGE_NAME=${1:-"yolo8_multithreading_api"}
 
 # Set the version of the Docker image
 VERSION=${2:-"1.0.0"}
 
 # Set the name of the Azure Container Registry
-ACR_NAME=${3:-""}
+ACR_NAME=${3:-"acrsaladdev"}
 
 # Build the Docker image
 docker build -t $IMAGE_NAME ./
@@ -24,4 +24,4 @@ docker tag $IMAGE_NAME $ACR_NAME.azurecr.io/$IMAGE_NAME:$VERSION
 az acr login --name $ACR_NAME
 
 # Push the Docker image to the Azure Container Registry
-docker push $ACR_NAME.azurecr.io/$IMAGE_NAME
+docker push $ACR_NAME.azurecr.io/$IMAGE_NAME:$VERSION
