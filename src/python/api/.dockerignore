@@ -5,8 +5,10 @@
 .vscode
 .azurite
 .image/
-
+.results/
+dev/
 
 .env
 application.log
 local.settings.json
+__pycache__

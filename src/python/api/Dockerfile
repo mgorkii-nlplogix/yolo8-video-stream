@@ -21,6 +21,4 @@ RUN pip install uvicorn
 
 WORKDIR /app/inference
 
-# Set the entrypoint to run inference.py
-# CMD ["sh", "-c", "uvicorn fast:app --host 0.0.0.0 --port 80 & socat TCP6-LISTEN:8888,fork TCP4:127.0.0.1:80"]
-CMD ["uvicorn", "fast_multithreading:app", "--host", "::", "--port", "80"]
+CMD ["uvicorn", "fast:app", "--host", "::", "--port", "80"]

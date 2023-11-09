@@ -6,13 +6,13 @@
 
 
 # Set the name of the Docker image
-IMAGE_NAME=${1:-"yolo8_multithreading_api"}
+IMAGE_NAME=${1:-"yolo8_fast_api"}
 
 # Set the version of the Docker image
 VERSION=${2:-"1.0.0"}
 
 # Set the name of the Azure Container Registry
-ACR_NAME=${3:-"acrsaladdev"}
+ACR_NAME=${3:-""}
 
 # Build the Docker image
 docker build -t $IMAGE_NAME ./
