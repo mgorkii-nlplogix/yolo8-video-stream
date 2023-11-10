@@ -21,4 +21,4 @@ RUN pip install uvicorn
 
 WORKDIR /app/inference
 
-CMD ["uvicorn", "fast:app", "--host", "::", "--port", "80"]
+CMD ["uvicorn", "fast_multi:app", "--host", "::", "--port", "80"]
